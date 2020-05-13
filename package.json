@@ -1,6 +1,6 @@
 {
   "name": "react-plantuml",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "a react component for plantuml",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
