@@ -14,7 +14,7 @@ const ReactPlantUML: FunctionComponent<Props> = (props) => {
 
     const compileSrc = (src: string) => {
         const url = plantumlEncoder.encode(src);
-        setSvg(`http://www.plantuml.com/plantuml/img/${url}`);
+        setSvg(`http://www.plantuml.com/plantuml/svg/${url}`);
     }
 
     useEffect(() => {
