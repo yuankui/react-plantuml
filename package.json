@@ -1,7 +1,7 @@
 {
-  "name": "redux-commands",
+  "name": "react-plantuml",
   "version": "2.0.6",
-  "description": "a redux middleware that allows your dispatch commands",
+  "description": "a react component for plantuml",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -12,22 +12,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yuankui/redux-commands.git"
+    "url": "git+https://github.com/yuankui/react-plantuml.git"
   },
   "keywords": [
-    "redux",
-    "commands",
-    "middleware",
-    "redux-middleware",
-    "fsa",
-    "flux"
+    "react",
+    "plantuml",
+    "uml"
   ],
   "author": "yuankui <yuankui64@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yuankui/redux-commands/issues"
+    "url": "https://github.com/yuankui/react-plantuml/issues"
   },
-  "homepage": "https://github.com/yuankui/redux-commands#readme",
+  "homepage": "https://github.com/yuankui/react-plantuml",
   "devDependencies": {
     "@types/jest": "^24.0.18",
     "coveralls": "^3.0.0",
