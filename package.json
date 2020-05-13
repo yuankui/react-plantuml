@@ -38,7 +38,7 @@
   "dependencies": {
     "@types/react": "^16.9.35",
     "@types/react-dom": "^16.9.8",
-    "plantuml": "^0.0.1",
+    "plantuml-encoder": "^1.4.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   }

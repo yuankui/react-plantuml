@@ -1,8 +1,7 @@
-// @ts-ignore
-import plantuml from "plantuml";
-
 import * as React from 'react';
 import {FunctionComponent, useEffect, useState} from 'react';
+// @ts-ignore
+import plantumlEncoder from 'plantuml-encoder';
 
 
 interface Props {
@@ -13,10 +12,8 @@ interface Props {
 const ReactPlantUML: FunctionComponent<Props> = (props) => {
     const [svg, setSvg] = useState('');
 
-    const compileSrc = async (src: string) => {
-        const data = await plantuml(src);
-        const base64 = btoa(data);
-        const url = `data:image/svg;base64,${base64}`;
+    const compileSrc = (src: string) => {
+        const url = plantumlEncoder.encode(src);
         setSvg(url);
     }
 
