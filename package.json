@@ -36,6 +36,10 @@
     "typescript": "^3.2.1"
   },
   "dependencies": {
-    "redux": "^4.0.4"
+    "@types/react": "^16.9.35",
+    "@types/react-dom": "^16.9.8",
+    "plantuml": "^0.0.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   }
 }
