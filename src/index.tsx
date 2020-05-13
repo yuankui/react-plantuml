@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {FunctionComponent, useEffect, useState} from 'react';
+import {FunctionComponent} from 'react';
 // @ts-ignore
 import plantumlEncoder from 'plantuml-encoder';
 
@@ -10,20 +10,11 @@ interface Props {
 }
 
 const ReactPlantUML: FunctionComponent<Props> = (props) => {
-    const [svg, setSvg] = useState('');
-
-    const compileSrc = (src: string) => {
-        const url = plantumlEncoder.encode(src);
-        setSvg(`http://www.plantuml.com/plantuml/svg/${url}`);
-    }
-
-    useEffect(() => {
-        compileSrc(props.src);
-    }, [props.src]);
-
+    const encode = plantumlEncoder.encode(props.src);
+    const url = `http://www.plantuml.com/plantuml/svg/${encode}`;
 
     return <>
-        <img alt={props.alt} src={svg}/>
+        <img alt={props.alt} src={url}/>
     </>;
 };
 
